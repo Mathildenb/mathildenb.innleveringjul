@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Nordby Photography</title>
+	<link rel="stylesheet" href="./index.css">
+</head>
+
+<body> 
+    <div class="hoved">
+		  <div class="navbar">
+			  <div class="ikon" id="skrollOpp">
+				  <a href="index.html">
+					<h2 class="logo">Nordby Photography</h2>
+				  </a>
+			  </div>
+
+			  <a href="#" class="hamburger">
+				  <span class="bar"></span>            
+          <span class="bar"></span> 
+          <span class="bar"></span> 
+        </a>
+
+        <div class="navMenu">
+          <ul>
+            <li class="aktiv"><a href="index.html">HJEM</a></li>    
+            <li id="OmMeg"><a href="om_meg.html">OM MEG</a></li>
+            <li><a href="bilder.html">BILDER</a></li>
+            <li><a href="kontakt.html">KONTAKT</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="text-box">
+        <h1>Nordby Photography</h1>
+      </div>
+
+    </div>
+
+    <section class="Forside-del1">
+        <div class="<Tekst">
+          <h2>Hva er Nordby Photography?</h2>
+        </div>
+        <div class="NB">
+          <p>Jeg heter Trude Nordby-Bøe og er en ivrig hobbyfotograf som liker å ta bilder av alt fra naturopplevelser til portretter av mennesker jeg kjenner. Nordby Photography er navnet på bildegalleriet som jeg har samlet opp igjennom årene. <br><br>På denne nettsiden viser jeg fram noen av bildene jeg har tatt, hovedsaklig for å samle dem opp og vise dem fram, men også for å spre inspirasjon og gi noen fototips til de som vil lære.
+          <br><br> 
+          Dere kan lese litt mer om meg <a href="om_meg.html">her</a> 
+         </p>
+        </div>
+        <div class="Bilder">
+          <div class="col" id="col-1-1"></div>
+          <div class="col" id="col-1-2"></div>
+        </div>
+    
+    </section>
+
+    <a href="#skrollOpp"><div class="Forside"> Til Forsiden</div></a>
+
+    <div class="bottombar">
+      <h5>NORDBY PHOTOGRAPHY</h5>
+    </div>
+
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".navMenu");
+        const onClick = document.querySelector(".bar")
+
+        hamburger.addEventListener("click", mobileMenu);
+
+        function mobileMenu() {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+        }
+
+        for (i = 0; i < onClick.length;i++) {
+            onClick[i].addEventListener("click", closeham);
+        }
+
+        function closeham() {
+        navMenu.classList.toggle("inactive");
+        hamburger.classList.toggle("inactive");
+        }
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nordby Photography</title>
+    <link rel="stylesheet" href="om_meg.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+  <body>
+        <div class="hoved-ommeg">
+        <div class="navbar">
+            <div class="ikon" id="skrollOpp">
+                <a href="index.html"><h2 class="logo">Nordby Photography</h2></a>
+            </div>
+
+            <a href="#" class="hamburger">
+               <span class="bar"></span>            
+               <span class="bar"></span> 
+               <span class="bar"></span> 
+            </a>
+
+            <div class="navMenu">
+                <ul>
+                    <li><a href="index.html">HJEM</a></li>    
+                    <li class="aktiv"><a href="om_meg.html">OM MEG</a></li>
+                    <li><a href="bilder.html">BILDER</a></li>
+                    <li><a href="kontakt.html">KONTAKT</a></li>
+                </ul>
+            </div>
+        </div>
+
+    <div class="text-box">
+    <h1>Om meg</h1>
+    </div>
+    </div>
+
+<section class="Ommeg-section">
+        <div>
+          <p id="Sitat">"Jeg tar bilder for å ta vare på viktige øyeblikk i livet"</p>
+          <p id="Underskrift">-Trude Nordby-Bøe</p>
+        </div>
+
+        <div class="Ommeg">
+
+          <div class="col">
+            <h2> Litt om meg </h2>
+            <p>Helt siden jeg var ganske ung har jeg likt å ta bilder og kameraet har vært med meg på mange turer rundt i hele verden og ut i den norske fjellheimen.Jeg er en aktiv person som er glad i å gå på fjellturer og skiturer, og å fange de fine øyeblikkene på kamera.<br><br>Her deler jeg noen av de bildene jeg synes har blitt bra, både fotomessig, men også som viktige minner. De fleste bildene jeg deler er av natur og dyr, mens det er litt færre portretter av mennesker her. <br><br>Jeg er spesialsykepleier til barn og har også tatt bilder for foreldre til kritisk syke nyfødte og premature. Men noen bilder er så personlige for de det gjelder at de ikke egner seg her. Men de trygge «feel good» bildene kan du se på denne nettsiden</p>
+          </div>
+          <div class="col" id="Littommeg2">
+          </div>
+
+          <div class="col"  id="Utstyr1"></div>
+          <div class="col" id="Utstyrogtips">
+            <h2>Utstyr<h2>
+            <ol>
+              <li>Nikon D610 Full Frame Sensor Camera</li>
+              <li>Nikon AF Nikkor 35mm F/2</li>
+              <li>Nikon AF Nikkor 50mm F/1.4</li>
+              <li>Nikon AF-S Micro Nikkor 105mm F/2.8</li>
+              <li>Nikon Speedlight Blitz</li>
+              <li>iPhone 12</li>
+            </ol>
+          </div>
+    
+          <div class="col" id="Utstyrogtips">
+            <h2>Fototips<h2>
+            <ol>
+              <li>Bilder i bevegelse gir mer liv enn oppstilte bilder</li>
+              <li>Bruk naturlig lys når det er mulig</li>
+              <li>Gå på fotojakt i naturen, det er så mange detaljer å fange</li>
+              <li>Finn din stil og ditt uttrykk i bildene du tar</li>
+              <li>Bruk morgen/kveldslyset, det er så vakkert</li>
+              <li>Ønsk deg et enkelt speilrefleks kamera du kan ta med deg over alt (det ønsker jeg meg:)</li>
+            </ol>
+          </div>
+          <div class="col" id="Tips2"></div>
+          
+        </div>
+    </section>
+
+     <a href="#skrollOpp"><div class="Forside"> Til Forsiden</div></a>
+
+    <div class="bottombar">
+      <h5>NORDBY PHOTOGRAPHY</h5>
+    </div>
+
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".navMenu");
+        const onClick = document.querySelector(".bar")
+
+        hamburger.addEventListener("click", mobileMenu);
+
+        function mobileMenu() {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+        }
+
+        for (i = 0; i < onClick.length;i++) {
+            onClick[i].addEventListener("click", closeham);
+        }
+
+        function closeham() {
+        navMenu.classList.toggle("active");
+        hamburger.classList.toggle("active");
+        
+        }
+    </script>
+
+  </body>
+</html>
+

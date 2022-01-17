@@ -1,0 +1,40 @@
+/*generell css*/
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing:border-box;
+}
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+h2 {
+    font-size: 33px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    padding: 10px;
+}
+#Kontakt {
+  margin-top: 80px;
+}
+
+/*CSS for navbar*/
+.hoved-kontakt { /*bakgrunnsbildet*/
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%), url(./Bilderinnlevering/Vinterbilder/Himmel.JPG);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.TekstKontakt p{
+  color: rgb(0, 0, 0);
+  font-size: 17px;
+  padding: 10px;
+  text-align: center;
+}
+.TekstKontakt {
+  flex-basis: 100%;
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+}

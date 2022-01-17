@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nordby Photography</title>
+    <link rel="stylesheet" href="kontakt.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<section>
+  <body class="kontakt">
+        <div class="hoved-kontakt">
+        <div class="navbar">
+            <div class="ikon" id="skrollOpp">
+                  <a href="index.html"><h2 class="logo">Nordby Photography</h2></a>
+            </div>
+
+            <a href="#" class="hamburger">
+               <span class="bar"></span>            
+               <span class="bar"></span> 
+               <span class="bar"></span> 
+            </a>
+
+            <div class="navMenu">
+                <ul>
+                    <li><a href="index.html">HJEM</a></li>    
+                    <li><a href="om_meg.html">OM MEG</a></li>
+                    <li><a href="bilder.html">BILDER</a></li>
+                    <li class="aktiv"><a href="kontakt.html">KONTAKT</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="text-box">
+              <h1>Kontakt</h1>
+        </div>
+  </div>
+</section>
+      
+<section class="kontaktMeg">
+<div class="TekstKontakt">
+<h2>Kontakt meg</h2>
+<br>
+<p>
+  Nordby Photography AS 
+  <br><br>
+  1344 Haslum, Norge
+  <br><br>
+  Telefon: +47 92622782 
+  <br><br>
+  e-mail: trudenb@me.com 
+  </p>
+</section>
+
+<section>
+<a href="mailto:trudenb@me.com" target="_blank"><div class="Forside" id="Kontakt"> Hurtigtast for kontakt</div></a>
+</section>
+
+<section>
+ <a href="#skrollOpp"><div class="Forside"> Til Forsiden</div></a>
+</section>
+
+    <div class="bottombar">
+      <h5>NORDBY PHOTOGRAPHY</h5>
+    </div>
+  
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".navMenu");
+        const onClick = document.querySelector(".bar")
+
+        hamburger.addEventListener("click", mobileMenu);
+
+        function mobileMenu() {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+        }
+
+        for (i = 0; i < onClick.length;i++) {
+            onClick[i].addEventListener("click", closeham);
+        }
+
+        function closeham() {
+        navMenu.classList.toggle("active");
+        hamburger.classList.toggle("active");
+        
+        }
+    </script>
+
+  </body>
+</html>
+

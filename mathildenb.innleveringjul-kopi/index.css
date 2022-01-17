@@ -1,0 +1,293 @@
+/*generell css*/
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing:border-box;
+}
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+h2 {
+    font-size: 33px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    padding: 15px;
+}
+
+/*CSS for navbar*/
+.hoved { /*bakgrunnsbildet*/
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%), url(./Bilderinnlevering/Fjellturer/Kajakk1.JPG);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+.text-box {
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+  padding: 10px;
+  font-size: 25px;
+  /*font-family: 'Mon'*/
+  margin-top: 65vh;
+  margin-left: 35%;
+  width: 30%;
+}
+.text-box h1 {
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 35px; 
+}
+.navbar { 
+    height: 80px;
+    width: 100%;
+    background-color: rgba(0,0,0,0.3);
+}
+
+.logo { /*CSS for logoen i venstre hjørne*/
+    font-size: 35px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #faa609;
+    padding-left: 20px;
+    float: left;
+    padding-top: 15px;
+}
+.navbar ul li a {
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+}
+.navbar ul { 
+    display: flex;
+    justify-content: space-around; /*bedre enn space between, luft på begge steder*/
+    /* for å få punktet foran*/
+    list-style: none;
+    color: #fff;
+    margin-left: 30%;
+}
+.navbar ul li {
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 20px;
+}
+/*CSS for når man trykker på listepunktet*/
+.navbar ul li:hover {
+    background-color: rgba(0,0,0,0.5);
+    box-shadow: 0 0 1px #faa609,
+                0 0 1px #faa609;
+    border-radius: 5px;
+}
+.aktiv {
+    background-color: rgba(0,0,0,0.5);
+    box-shadow: 0 0 5px #faa609,
+                0 0 5px #faa609;
+    border-radius: 5px;
+}
+
+/*meny knapp*/
+.hamburger{
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    margin-left: 90%;
+    margin-top: 28px;
+}
+.hamburger .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+}
+
+/*responsiv navbar for ulike skjermstørrelser*/
+@media (max-width:970px) {
+    .logo {
+        font-size: 27px;
+        margin-top: 10px;
+    }
+    .navbar ul li {
+        font-size: 12px;
+        margin-top: 28px;
+    }
+
+}
+@media (max-width:800px) {
+
+    /*hamburgmeny*/
+    .hamburger {
+        display: flex;
+        cursor: pointer;
+        background-color: transparent;
+    }
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0; 
+     }
+     .hamburger.active .bar:nth-child(1) {
+         transform: translate(0px,9px) rotate(45deg);
+     }
+     .hamburger.active .bar:nth-child(3) {
+         transform: translate(0px,-9px) rotate(-45deg);
+     }
+    .navMenu{
+        display: none;
+    }
+    .navMenu.active{
+        display: flex;
+        width: 100%;
+        position: absolute;
+        margin-top: 100px;
+        background-color: rgba(0,0,0,0.7);
+    }
+
+
+    .navMenu ul {
+        width: 100%;
+        flex-direction: column;
+        margin-left: 0;
+    }
+    .navMenu ul li {
+        font-size: 20px;
+        width: 100%;
+        text-align: center;
+        border: 1px solid rgba(255,255, 255,0.3);
+        margin: 0;
+        padding: 25px;
+    }
+    .navMenu ul li:hover {
+      box-shadow: 0 0 5px #faa609,
+                0 0 5px #faa609;
+    }
+    .aktiv {
+      background-color: transparent;
+      box-shadow: none;
+      border-radius: 5px;
+    }
+    .text-box {
+       margin-left: 25%;
+       width: 50%;
+    }
+    .text-box h1 {
+      font-size: 27px;
+    }
+}
+
+/*forside*/
+.Forside-del1{
+  width:90%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+.NB p{
+  color: rgb(0, 0, 0);
+  font-size: 17px;
+  padding: 10px;
+  margin-left: 40px;
+  text-align: center;
+}
+.NB {
+  flex-basis: 100%;
+  padding: 20px;
+  margin-bottom: 5%;
+  width: 90%;
+  text-align: center;
+}
+
+/*bildene*/
+.Bilder{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.col{
+    flex-basis: 47%;
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin-bottom: 5%;
+    padding: 30px 23px;
+    box-sizing: border-box;
+    background-size: cover;
+    min-height: 400px; 
+    min-width: 47%;
+}
+#col-1-1{
+    background-image: url(./Bilderinnlevering/Vinterbilder/Finnatur.JPG);
+}
+#col-1-2{
+    background-image: url(./Bilderinnlevering/Blomster/Blomster.JPG);
+}
+@media (max-width:800px) {
+    .Bilder {
+      flex-direction: column;
+      width: 70%;
+      margin-left: 15%;
+    }
+    h2 {
+      font-size: 30px;
+    }
+    p {
+      font-size: 15px;
+    }
+}
+@media (max-width:775px) {
+  .col {
+    width: 90%;
+    margin-left: 5%;
+  }
+  .Bilder {
+    width: 90%;
+    margin-left: 5%;
+  }
+}
+
+/*Link forside*/
+.Forside{
+  display: inline-block;
+  color: #000;
+  width: 30%;
+  border: 1px solid #000;
+  padding: 15px 12px;
+  font-size: 20px;
+  background: transparent;
+  cursor: pointer;
+  text-align: center;
+  margin-bottom: 40px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 120px;
+  list-style: none;
+}
+.Forside a{
+  color: #000;
+  text-decoration: none;
+}
+.Forside:hover{
+  border: 1px solid #000;
+  background: #faa609;
+  transition: 1s;
+}
+
+/*bunn*/
+.bottombar {
+  border-top: 2px solid #faa609;
+  width: 100%;
+  padding:10px;
+}
+.bottombar h5 {
+  font-size: 17px;
+  letter-spacing: 1.4rem;
+  text-align: center;
+}
+@media (max-width:650px) {
+  .bottombar h5 {
+    font-size: 12px;
+    letter-spacing: 0.8rem;
+  }
+}

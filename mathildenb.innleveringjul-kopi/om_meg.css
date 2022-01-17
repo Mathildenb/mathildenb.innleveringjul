@@ -1,0 +1,89 @@
+
+/*generell css*/
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+.hoved-ommeg { /*bakgrunnsbildet*/
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%), url(./Bilderinnlevering/Vinterbilder/Randone.JPG);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+/* Litt om meg delen */
+.Ommeg-section{
+  width:90%;
+  margin: auto;
+  text-align: center;
+}
+#Sitat {
+  font-size: 30px;
+  font-family: cursive;
+  color:#4d4b4b;
+  margin-top: 100px;
+}
+#Underskrift {
+  text-align: right;
+  margin-right: 100px;
+  padding: 10px;
+}
+.Ommeg{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#Littommeg2{
+    background-image: url(./Bilderinnlevering/Trude3.JPG);
+    background-size: cover;
+    min-height: 400px;
+    border-radius: 10px;
+}
+@media (max-width:850px) {
+    #Sitat1 {
+      font-size: 19px;
+    }
+    #Underskrift {
+      text-align: right;
+      margin-right: 0; 
+    }
+    .col h2 {
+      font-size: 27px;
+    }
+    .Ommeg {
+      flex-direction: column;
+    }
+}
+
+/* Utstyr og tips */
+.Utstyrogtips {
+  padding: 15px;
+  min-height: 450px;
+}
+#Utstyrogtips ol {
+  font: 15px "Arial", sans-serif;
+  list-style-type: disc;
+}
+#Utstyrogtips ol li {
+  font-size: 15px;
+  margin-left: 5%;
+  padding: 5px;
+  text-align: left;
+}
+#Utstyr1 {
+  background-image: url(./Bilderinnlevering/Horisonter/Soloppgang2.JPG);
+  background-size: cover;
+}
+#Tips2 {
+  background-image: url(./Bilderinnlevering/Vinterbilder/Ski.JPG);
+  background-size: cover;
+}
+@media (max-width:700px) {
+  .col {
+    width: 90%;
+    margin-left: 5%;
+  }
+}
